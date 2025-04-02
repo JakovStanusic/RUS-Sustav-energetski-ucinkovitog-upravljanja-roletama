@@ -1,0 +1,62 @@
+{
+  "version": 1,
+  "author": "Karlo Budišin",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": 58.2, "left": -67.8, "attrs": {} },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn_high",
+      "top": 6.2,
+      "left": 240,
+      "attrs": { "color": "red" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn_medium",
+      "top": -38.3,
+      "left": 92.7,
+      "rotate": 270,
+      "attrs": { "color": "blue" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led_high",
+      "top": -51.6,
+      "left": -5.8,
+      "attrs": { "color": "red", "value": "0" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led_medium",
+      "top": -51.6,
+      "left": 23,
+      "attrs": { "color": "blue", "value": "0" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led_sensor",
+      "top": -51.6,
+      "left": 51.8,
+      "attrs": { "color": "green", "value": "0" }
+    },
+    { "type": "wokwi-hc-sr04", "id": "sensor", "top": 171.5, "left": 239.8, "attrs": {} }
+  ],
+  "connections": [
+    [ "btn_high:1.l", "uno:2", "red", [ "h0" ] ],
+    [ "btn_high:2.l", "uno:GND.2", "black", [ "h0" ] ],
+    [ "btn_medium:1.l", "uno:3", "blue", [ "h0" ] ],
+    [ "btn_medium:2.l", "uno:GND.2", "black", [ "h0" ] ],
+    [ "uno:13", "led_high:A", "red", [ "h0" ] ],
+    [ "led_high:C", "uno:GND.1", "black", [ "h0" ] ],
+    [ "uno:12", "led_medium:A", "blue", [ "h0" ] ],
+    [ "led_medium:C", "uno:GND.1", "black", [ "h0" ] ],
+    [ "uno:11", "led_sensor:A", "green", [ "h0" ] ],
+    [ "led_sensor:C", "uno:GND.1", "black", [ "h0" ] ],
+    [ "uno:7", "sensor:TRIG", "orange", [ "h0" ] ],
+    [ "uno:6", "sensor:ECHO", "purple", [ "h0" ] ],
+    [ "sensor:VCC", "uno:5V", "red", [ "h0" ] ],
+    [ "sensor:GND", "uno:GND.2", "black", [ "h0" ] ]
+  ],
+  "dependencies": {}
+}
