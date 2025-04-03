@@ -3,7 +3,7 @@
   "author": "Karlo Budišin",
   "editor": "wokwi",
   "parts": [
-    { "type": "wokwi-arduino-uno", "id": "uno", "top": 58.2, "left": -67.8, "attrs": {} },
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": 106.2, "left": -58.2, "attrs": {} },
     {
       "type": "wokwi-pushbutton",
       "id": "btn_high",
@@ -14,8 +14,8 @@
     {
       "type": "wokwi-pushbutton",
       "id": "btn_medium",
-      "top": -38.3,
-      "left": 92.7,
+      "top": -57.5,
+      "left": 140.7,
       "rotate": 270,
       "attrs": { "color": "blue" }
     },
@@ -40,7 +40,20 @@
       "left": 51.8,
       "attrs": { "color": "green", "value": "0" }
     },
-    { "type": "wokwi-hc-sr04", "id": "sensor", "top": 171.5, "left": 239.8, "attrs": {} }
+    {
+      "type": "wokwi-led",
+      "id": "led_timer",
+      "top": -51.6,
+      "left": 80.6,
+      "attrs": { "color": "yellow", "value": "0" }
+    },
+    {
+      "type": "wokwi-hc-sr04",
+      "id": "sensor",
+      "top": 171.5,
+      "left": 239.8,
+      "attrs": { "distance": "88" }
+    }
   ],
   "connections": [
     [ "btn_high:1.l", "uno:2", "red", [ "h0" ] ],
@@ -53,6 +66,8 @@
     [ "led_medium:C", "uno:GND.1", "black", [ "h0" ] ],
     [ "uno:11", "led_sensor:A", "green", [ "h0" ] ],
     [ "led_sensor:C", "uno:GND.1", "black", [ "h0" ] ],
+    [ "uno:10", "led_timer:A", "yellow", [ "h0" ] ],
+    [ "led_timer:C", "uno:GND.1", "black", [ "h0" ] ],
     [ "uno:7", "sensor:TRIG", "orange", [ "h0" ] ],
     [ "uno:6", "sensor:ECHO", "purple", [ "h0" ] ],
     [ "sensor:VCC", "uno:5V", "red", [ "h0" ] ],
