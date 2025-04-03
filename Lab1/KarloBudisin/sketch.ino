@@ -5,6 +5,7 @@
  * 
  * Program demonstrira rad s prekidima na Arduino UNO platformi,
  * uključujući prekide od tipkala, tajmera i senzora udaljenosti.
+ * 
  */
 
 #include <Arduino.h>
@@ -96,7 +97,7 @@ float measureDistance() {
   
   long duration = pulseIn(ECHO_PIN, HIGH, 30000);
   if (duration == 0) {
-    return 999.0; // Vraća veliku vrijednost ako nema odjeka
+    return 999.0; 
   }
   return duration * 0.034 / 2;
 }
@@ -149,31 +150,31 @@ void loop() {
   unsigned long currentMillis = millis();
 
   // Obrada prekida po prioritetima
-  if (highPriorityEvent) {
-    highPriorityEvent = false;
-    digitalWrite(LED_HIGH_PIN, HIGH);
-    digitalWrite(LED_SENSOR_PIN, LOW);
-    digitalWrite(TIMER_LED_PIN, LOW);
-    ledHighTimer = currentMillis;
-  }
-
-  if (mediumPriorityEvent && !highPriorityEvent) {
-    mediumPriorityEvent = false;
-    digitalWrite(LED_MEDIUM_PIN, HIGH);
-    digitalWrite(LED_SENSOR_PIN, LOW);
-    digitalWrite(TIMER_LED_PIN, LOW);
-    ledMediumTimer = currentMillis;
-  }
-
-  if (timerEvent && !highPriorityEvent && !mediumPriorityEvent) {
+  // 1. Timer (najviši prioritet)
+  if (timerEvent) {
     timerEvent = false;
     digitalWrite(TIMER_LED_PIN, HIGH);
-    digitalWrite(LED_SENSOR_PIN, LOW);
     ledTimerTimer = currentMillis;
   }
 
-  // Senzor udaljenosti (najniži prioritet)
-  if (!highPriorityEvent && !mediumPriorityEvent && !timerEvent) {
+  // 2. Visoki prioritet (crveno tipkalo)
+  if (highPriorityEvent && !timerEvent) {
+    highPriorityEvent = false;
+    digitalWrite(LED_HIGH_PIN, HIGH);
+    digitalWrite(LED_SENSOR_PIN, LOW);
+    ledHighTimer = currentMillis;
+  }
+
+  // 3. Srednji prioritet (plavo tipkalo)
+  if (mediumPriorityEvent && !timerEvent && !highPriorityEvent) {
+    mediumPriorityEvent = false;
+    digitalWrite(LED_MEDIUM_PIN, HIGH);
+    digitalWrite(LED_SENSOR_PIN, LOW);
+    ledMediumTimer = currentMillis;
+  }
+
+  // 4. Senzor udaljenosti (najniži prioritet)
+  if (!timerEvent && !highPriorityEvent && !mediumPriorityEvent) {
     if (currentMillis - lastSensorCheck > sensorCheckInterval) {
       lastSensorCheck = currentMillis;
       float distance = measureDistance();
@@ -200,4 +201,3 @@ void loop() {
     digitalWrite(TIMER_LED_PIN, LOW);
   }
 }
-
