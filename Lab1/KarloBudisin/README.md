@@ -54,4 +54,8 @@ Ovaj projekt koristi sljedeće komponente:
 | FR-8  | Automatsko gašenje LED-ica nižeg prioriteta prilikom aktivacije prekida višeg prioriteta.             |
 | FR-9  | Kontinuirano praćenje udaljenosti sa intervalom od 100ms.                                            |
 | FR-10 | Test LED-ova pri pokretanju sustava.                                                                 |
-| FR-11 | Bljeskajuća zelena LED kao indikacija blizine predmeta (<100cm).    
+| FR-11 | Bljeskajuća zelena LED kao indikacija blizine predmeta (<100cm).                                     |
+
+
+### Link za projekt na wokwi stranici je: https://wokwi.com/projects/427231197463397377
+
