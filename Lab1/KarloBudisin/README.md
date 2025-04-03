@@ -59,3 +59,6 @@ Ovaj projekt koristi sljedeće komponente:
 
 ### Link za projekt na wokwi stranici je: https://wokwi.com/projects/427231197463397377
 
+![image](https://github.com/user-attachments/assets/afbe46e1-09c4-4fda-b3ad-b3e48757e5b1)
+
+
