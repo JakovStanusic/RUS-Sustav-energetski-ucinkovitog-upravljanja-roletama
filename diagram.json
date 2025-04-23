@@ -1,0 +1,58 @@
+{
+  "version": 1,
+  "author": "You",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-mega", "id": "mega", "top": 0.6, "left": -61.2, "attrs": {} },
+    {
+      "type": "wokwi-dht22",
+      "id": "dht1",
+      "top": 257.1,
+      "left": 188.4,
+      "rotate": 180,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-photoresistor-sensor",
+      "id": "ldr1",
+      "top": -153.9,
+      "left": 320.9,
+      "rotate": 90,
+      "attrs": {}
+    },
+    { "type": "wokwi-ds1307", "id": "rtc1", "top": -111, "left": 240.1, "attrs": {} },
+    {
+      "type": "wokwi-servo",
+      "id": "servo1",
+      "top": -183.4,
+      "left": 59.4,
+      "rotate": 270,
+      "attrs": {}
+    },
+    { "type": "wokwi-pushbutton", "id": "btn1", "top": -60, "left": 500, "attrs": {} },
+    { "type": "wokwi-pushbutton", "id": "btn2", "top": 60, "left": 500, "attrs": {} },
+    { "type": "wokwi-pushbutton", "id": "btn3", "top": 180, "left": 500, "attrs": {} }
+  ],
+  "connections": [
+    [ "mega:A0", "ldr1:AO", "green", [ "h0" ] ],
+    [ "mega:2", "dht1:SDA", "green", [ "h0" ] ],
+    [ "mega:3", "servo1:PWM", "blue", [ "h0" ] ],
+    [ "mega:5", "btn1:1.l", "yellow", [ "h0" ] ],
+    [ "mega:6", "btn2:1.l", "yellow", [ "h0" ] ],
+    [ "mega:7", "btn3:1.l", "yellow", [ "h0" ] ],
+    [ "mega:GND.2", "btn1:2.r", "black", [ "h0" ] ],
+    [ "mega:GND.2", "btn2:2.r", "black", [ "h0" ] ],
+    [ "mega:GND.2", "btn3:2.r", "black", [ "h0" ] ],
+    [ "mega:5V", "dht1:VCC", "red", [ "h0" ] ],
+    [ "mega:5V", "ldr1:VCC", "red", [ "h0" ] ],
+    [ "mega:5V", "rtc1:VCC", "red", [ "h0" ] ],
+    [ "mega:5V", "servo1:V+", "red", [ "h0" ] ],
+    [ "mega:GND.1", "dht1:GND", "black", [ "h0" ] ],
+    [ "mega:GND.1", "ldr1:GND", "black", [ "h0" ] ],
+    [ "mega:GND.1", "rtc1:GND", "black", [ "h0" ] ],
+    [ "mega:GND.1", "servo1:GND", "black", [ "h0" ] ],
+    [ "mega:20", "rtc1:SDA", "green", [ "h0" ] ],
+    [ "mega:21", "rtc1:SCL", "green", [ "h0" ] ]
+  ],
+  "dependencies": {}
+}
