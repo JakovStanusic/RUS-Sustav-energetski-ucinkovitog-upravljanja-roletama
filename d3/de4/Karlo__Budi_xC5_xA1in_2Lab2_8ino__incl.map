@@ -1,0 +1,9 @@
+<map id="Lab2/Karlo_Budišin/Lab2.ino" name="Lab2/Karlo_Budišin/Lab2.ino">
+<area shape="rect" id="Node000001" title="Arduino program for sleep mode control with watchdog timer and button wake&#45;up." alt="" coords="93,5,239,45"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,93,100,119"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="140,48,82,87,79,83,137,43"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="125,93,207,119"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="169,46,169,79,163,79,163,46"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="231,93,346,119"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="197,43,260,84,258,88,194,48"/>
+</map>
