@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['handleinterrupt_0',['handleInterrupt',['../d4/d06/JakovStanu_xC5_xA1i_xC4_x87_2sketch_8ino.html#a809322e74243511d081caa718e1e6695',1,'sketch.ino']]],
-  ['handletimerinterrupt_1',['handleTimerInterrupt',['../d4/d06/JakovStanu_xC5_xA1i_xC4_x87_2sketch_8ino.html#a1fe6e42f17e1c3a667d8642dd2df1ed7',1,'sketch.ino']]],
-  ['highpriorityisr_2',['highPriorityISR',['../d4/d87/KarloBudisin_2sketch_8ino.html#a9b12692771dadec55b5270d834198ac3',1,'sketch.ino']]]
+  ['entersleep_0',['enterSleep',['../db/d37/Karlo__Budi_xC5_xA1in_2Lab2_8ino.html#ae5b5093bef9a291e112c49e9aae5feec',1,'Lab2.ino']]],
+  ['entersleepmode_1',['enterSleepMode',['../dc/de1/Jakov__Stanu_xC5_xA1i_xC4_x87_2Lab2_8ino.html#aa9118fcc53fc3a9ba93842858201533a',1,'Lab2.ino']]]
 ];

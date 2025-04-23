@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['setup_0',['setup',['../d4/d06/JakovStanu_xC5_xA1i_xC4_x87_2sketch_8ino.html#a4fc01d736fe50cf5b977f755b675f11d',1,'setup():&#160;sketch.ino'],['../d4/d87/KarloBudisin_2sketch_8ino.html#a4fc01d736fe50cf5b977f755b675f11d',1,'setup():&#160;sketch.ino'],['../dc/de1/Jakov__Stanu_xC5_xA1i_xC4_x87_2Lab2_8ino.html#a4fc01d736fe50cf5b977f755b675f11d',1,'setup():&#160;Lab2.ino'],['../db/d37/Karlo__Budi_xC5_xA1in_2Lab2_8ino.html#a4fc01d736fe50cf5b977f755b675f11d',1,'setup():&#160;Lab2.ino']]]
+  ['measuredistance_0',['measuredistance',['../d3/d49/Lab1_2JakovStanu_xC5_xA1i_xC4_x87_2sketch_8ino.html#a24db61917b9da8bb4b87af136cbd345f',1,'measureDistance():&#160;sketch.ino'],['../d8/d66/Lab1_2KarloBudisin_2sketch_8ino.html#a24db61917b9da8bb4b87af136cbd345f',1,'measureDistance():&#160;sketch.ino']]],
+  ['mediumpriorityisr_1',['mediumPriorityISR',['../d8/d66/Lab1_2KarloBudisin_2sketch_8ino.html#ad94f29e889f903a205a1c779fac12cf7',1,'sketch.ino']]]
 ];

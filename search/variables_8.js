@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['objectdetected_0',['objectDetected',['../d4/d87/KarloBudisin_2sketch_8ino.html#a7394a07929c6035425280da7f5400f8a',1,'sketch.ino']]]
+  ['mediumpriorityevent_0',['mediumPriorityEvent',['../d8/d66/Lab1_2KarloBudisin_2sketch_8ino.html#a9723c753cdf7bf5a4bef98772eebf95c',1,'sketch.ino']]]
 ];
