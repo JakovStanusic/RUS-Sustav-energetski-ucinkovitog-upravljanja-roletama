@@ -11,6 +11,11 @@ Upotrebom se automatizira upravljanje roletama na temelju trenutnih uvjeta okoli
  ✔ Pametne integracije s kućnom automatizacijom<br>
 
 ## Cilj projekta
+Cilj je razviti automatizirani, energetski efikasan sustav za upravljanje roletama koji:<br>
+ ✔ Smanjuje potrošnju energije kroz optimalnu kontrolu prirodnog svjetla i topline<br>
+ ✔ Integrira senzorske podatke (svjetlina, temperatura, vrijeme) za autonomno upravljanje<br>
+ ✔ Omogućuje ručnu nadogradnju putem tipki<br>
+ ✔ Povećava udobnost u stambenim i poslovnim prostorima<br>
 
 ##  Potencijalna korist projekta
 
