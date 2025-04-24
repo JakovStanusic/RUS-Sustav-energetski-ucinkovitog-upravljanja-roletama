@@ -30,6 +30,37 @@ Cilj je razviti automatizirani, energetski efikasan sustav za upravljanje roleta
 
 ## Opseg projektnog zadatka
 
-## Dijagram aktivnosti (UML)
+## Dijagram aktivnosti rada sustava (UML)
+```mermaid
+flowchart TD
+    A[Inicijaliziranje sustava] --> C{Način rada?}
+    
+    %% Automatski način
+    C -->|Automatski| J[Provjeri tipkalo 3]
+    J --> |Stisnuto -> promjena načina rada| C
+    J -->|Nije stisnuto tipkalo| D[Očitaj senzore]
+    D --> E[Temperature]
+    D --> F[Svjetlina]
+    D --> G[RTC vrijeme]
+    E & F & G --> H[Odredi poziciju]
+    H --> I[Pomakni motor]
+    I -.-> C
+    
+    %% Ručni način - lijevo poravnanje
+    C -->|Ručni| CC[Čekaj tipkala]
+    CC --> DD{Tipkalo 1?}
+    CC --> FF{Tipkalo 2?}
+    CC --> GG{Tipkalo 3?}
+    DD -->|Da| EE[Podigni roletu]
+    DD -->|Ne| CC[Čekaj tipkala]
+    FF -->|Da| HH[Spusti roletu]
+    FF -->|Ne| CC[Čekaj tipkala]
+    GG -->|Da, promjena načina rada| C
+    GG -->|Ne| CC
+    
+    %% Povratne veze
+    EE & HH --> CC
+```
+  
 
 ##
