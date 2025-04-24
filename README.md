@@ -23,8 +23,22 @@ Cilj je razviti automatizirani, energetski efikasan sustav za upravljanje roleta
 - Ekološki doprinos smanjenjem ugljičnog otiska <br>
 
 ##  Postojeća slična rješenja
+Na tržištu postoje: <br>
+ - Timerom upravljani sustavi (fiksno vrijeme podizanja/spuštanja) <br>
+ - Ručni daljinski upravljači (bez adaptacije na okolinu) <br>
+ - Skupi pametni sustavi (npr. Somfy, Lutron) <br>
+ 
+ Prednost našeg rješenja: <br> 
+  ✔ Jeftinija implementacija (Arduino + osnovni senzori) <br>
+  ✔ Pametnija regulacija (trenutni uvjeti > unaprijed programirano vrijeme) <br>
+  ✔ Open-source pristup (mogućnost prilagodbe) <br>
+
 
 ##  Skup korisnika
+  - Kućanstva – za smanjenje računa za energiju  <br>
+  - Poslovni prostori – uredi, škole, bolnice  <br>
+  - Gradnja pametnih zgrada – integriranje u sustave pametnih gradova  <br>
+
 
 ##  Mogućnost prilagodbe rješenja
 
