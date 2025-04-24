@@ -18,6 +18,9 @@ Cilj je razviti automatizirani, energetski efikasan sustav za upravljanje roleta
  ✔ Povećava udobnost u stambenim i poslovnim prostorima<br>
 
 ##  Potencijalna korist projekta
+- Energetske uštede (smanjenje troškova grijanja/hlađenja) <br>
+- Pametna integracija u kućne/uredske sustave <br>
+- Ekološki doprinos smanjenjem ugljičnog otiska <br>
 
 ##  Postojeća slična rješenja
 
