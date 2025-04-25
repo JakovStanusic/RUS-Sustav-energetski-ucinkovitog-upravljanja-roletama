@@ -41,8 +41,32 @@ Na tržištu postoje: <br>
 
 
 ##  Mogućnost prilagodbe rješenja
+Sustav se može nadograditi:  <br>
+  - WiFi/Bluetooth modulom za daljinsko upravljanje preko mobilne aplikacije  <br>
+  - Solarnim panelima za autonomno napajanje  <br>
+  - Integracijom s Home Assistantom ili drugim pametnim kućnim sustavima  <br>
+  - Dodatkom vremenske prognoze (API) za anticipacijsko upravljanje  <br>
 
 ## Opseg projektnog zadatka
+Uključuje:
+
+Hardversku implementaciju:
+ - Arduino MEGA
+ - LDR senzor svjetline
+ - DHT22 senzor temperature
+ - RTC sat (DS1307)
+ - Servo motor za pokretanje roleta
+ - Tipke za ručno upravljanje
+
+Softverski razvoj:
+ - Algoritam za donošenje odluka (svjetlina + temperatura + vrijeme)
+ - Upravljanje servo motorom
+ - Serijska komunikacija za debugiranje
+
+Testiranje:
+ - Reakcija na promjene svjetline/temperature
+ - Provjera rada u ručnom i automatskom načinu
+ - Analiza uštede energije
 
 ## Dijagram aktivnosti rada sustava (UML)
 ```mermaid
@@ -77,4 +101,6 @@ flowchart TD
 ```
   
 
-##
+## Shema
+
+## Dokumentirani kod
