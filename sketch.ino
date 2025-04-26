@@ -6,6 +6,10 @@
  * Kratki opis:
  * Ovaj sustav automatski upravlja roletama na temelju svjetline, temperature
  * i doba dana. Također omogućuje ručno upravljanje preko tipki.
+ *
+ * Autor: [Jakov Stanušić, Karlo Budišin]
+ * Datum: [26.4.2025.]
+ *
  */
  
 #include <Wire.h>
