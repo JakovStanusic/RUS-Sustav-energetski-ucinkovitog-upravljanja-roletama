@@ -4,6 +4,10 @@ Sustav razvijen na Arduino MEGA platformi omogućuje inteligentnu regulaciju rol
  - Intenzitetu dnevnog svjetla (mjerenu putem LDR senzora) <br>
  - Temperaturi prostorije (DHT22 senzor) <br>
  - Vremenu dana (RTC modul) <br>
+
+# Wokwi link: https://wokwi.com/projects/429041010088079361
+
+ ![Shema_Projekta](https://github.com/user-attachments/assets/2d0d0dea-3e3b-4c35-9bee-d6584b76eb24)
  
 Upotrebom se automatizira upravljanje roletama na temelju trenutnih uvjeta okoline  i korisničkih preferencija, s ciljem: <br>
  ✔ Optimizacije potrošnje energije (smanjenje troškova grijanja/hlađenja) <br>
@@ -102,5 +106,9 @@ flowchart TD
   
 
 ## Shema
+![Shema_Projekta](https://github.com/user-attachments/assets/2d0d0dea-3e3b-4c35-9bee-d6584b76eb24)
+
 
 ## Dokumentirani kod
+
+Dokumentirani kod sa opisom funkcija, varijabli i potrebnih library-a može se pronaći u sketch.ino datoteci.
